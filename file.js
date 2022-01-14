@@ -20,12 +20,15 @@ const fs = require('fs/promises');
         const drinkDetails = drink.split(' ');
         const [name, price, count] = drinkDetails;
         const turnover = parseFloat(price) * parseInt(count);
-
        // SAME gausi skaiciu, bet nezinai desimtainis ar nea
        //const turnover = +price * +count;
 
+        const t2 = Math.round(turnover * 100) / 100;
+        // const t1 = turnover.toFixed(2);
+
+
         console.log(`Pasirinkimas ${++i}: ${name}, kurio kaina yra ${price} EUR
-        buvo parduota ${count} kiekis ir bendra apyvarta yra ${turnover.toFixed(2)} EUR`);
+        buvo parduota ${count} kiekis ir bendra apyvarta yra ${t2} EUR`);
     }
     // const a = '555';
     // const b = parseInt(a);

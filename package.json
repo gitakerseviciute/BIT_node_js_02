@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "nodemon",
     "file": "nodemon ./file.js",
+    "co": "nodemon ./country.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gita <gitakerseviciute22@gmail.com>",
